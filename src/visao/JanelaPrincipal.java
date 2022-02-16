@@ -130,12 +130,14 @@ public class JanelaPrincipal extends JFrame {
 
 		panel = new JPanel();
 		contentPane.add(panel, "name_274384895752500");
-
+		panel.setLayout(new CardLayout());
+		
 		panelAdmissao = new JPanel();
 		contentPane.add(panelAdmissao, BorderLayout.CENTER);
 		panelAdmissao.setLayout(new MigLayout("", "[93.00][250.00,grow][][100.00][100.00]",
 				"[][35.00][35.00][35.00][][37.00][][][][][][][27.00]"));
 
+		
 		JLabel labelDadosPaciente = new JLabel("Dados do Paciente: ");
 		labelDadosPaciente.setFont(new Font("Tahoma", Font.BOLD, 13));
 		panelAdmissao.add(labelDadosPaciente, "cell 0 0,alignx left");

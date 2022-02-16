@@ -1,29 +1,29 @@
-package controle;
+package controle.action;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 import dao.ProfissionalDAO;
 import modelo.Profissional;
 import visao.JanelaPrincipal;
 
-
-public class ActionPanelAdmissao implements ActionListener{
-	
+public class ActionPanelAlta implements ActionListener{
+		
 		private JanelaPrincipal jan;
 		//private Profissional profissional;
 		//private ProfissionalDAO profissionalDAO;
 		
-		public ActionPanelAdmissao(JanelaPrincipal janelaPrincipal, Profissional prof, ProfissionalDAO profDao) {
+		public ActionPanelAlta(JanelaPrincipal janelaPrincipal, Profissional prof, ProfissionalDAO profDao) {
 			this.jan = janelaPrincipal;
 			//this.profissional = prof;
 			//this.profissionalDAO =  profDao;
 		}
 
 		@Override
-		public void actionPerformed(ActionEvent e1) {
-			switch (e1.getActionCommand()) {
+		public void actionPerformed(ActionEvent e2) {
+			switch (e2.getActionCommand()) {
 			case "Cancelar":
-				jan.limpaTelaAdmissao();
+				jan.limpaTelaAlta();
 				break;
 			case "Salvar":
 				System.out.println("funcionou");
@@ -37,9 +37,5 @@ public class ActionPanelAdmissao implements ActionListener{
 			
 		} 
 
-		
-		
-		
-	}
 
-
+}
