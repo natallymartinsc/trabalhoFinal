@@ -6,17 +6,14 @@ import java.awt.event.ActionListener;
 import dao.ProfissionalDAO;
 import modelo.Profissional;
 import visao.JanelaPrincipal;
+import visao.panel.ListaInternadosPanel;
 
 public class ActionPanelListaInternados implements ActionListener{
 		
-		private JanelaPrincipal jan;
-		//private Profissional profissional;
-		//private ProfissionalDAO profissionalDAO;
+		private ListaInternadosPanel panel;
 		
-		public ActionPanelListaInternados(JanelaPrincipal janelaPrincipal, Profissional prof, ProfissionalDAO profDao) {
-			this.jan = janelaPrincipal;
-			//this.profissional = prof;
-			//this.profissionalDAO =  profDao;
+		public ActionPanelListaInternados(ListaInternadosPanel panel) {
+			this.panel = panel;
 		}
 
 		@Override
